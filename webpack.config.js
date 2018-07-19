@@ -102,7 +102,7 @@ module.exports = {
               },
               fallback: 'file-loader',
               outputPath: './',
-              publicPath: args.git ? '/gs-webpack/' : '/'
+              publicPath: args.git ? '/evolve-webpack/' : '/'
             }
           }
         ]
