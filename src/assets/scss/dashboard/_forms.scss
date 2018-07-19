@@ -1,0 +1,53 @@
+.form-group--db {
+  position: relative;
+  & + & {
+    margin-top: 40px;
+    @media (min-width: $screen-sm) {
+      margin-top: 60px;
+    }
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: text;
+    transition: transform .15s ease-out;
+    text-align: initial;
+    transform-origin: 0 100%;
+    transform: translateY(0);
+    pointer-events: none;
+    font-weight: normal;
+    margin: 0;
+    will-change: transform;
+  }
+  .form-control {
+    background-color: transparent;
+    border-color: transparent;
+    //border-bottom-color: #9f9f9f;
+    padding-left: 0;
+    //color: #fff;
+    box-shadow: none;
+    height: auto;
+    &:focus {
+      border-color: transparent;
+      border-bottom-color: #ffffff;
+      outline: 0;
+      & + label {
+        transform: translateY(-100%) scale(0.8);
+        transform-origin: 0 0;
+      }
+    }
+    &.not-empty {
+      border-color: transparent;
+      //border-bottom-color: #ffffff;
+      outline: 0;
+      & + label {
+        transform: translateY(-100%) scale(0.8);
+        transform-origin: 0 0;
+      }
+    }
+    @media(min-width: $screen-sm) {
+      font-size: 22px;
+    }
+  }
+}

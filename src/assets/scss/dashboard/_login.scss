@@ -1,0 +1,95 @@
+
+.dashboard-login {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: #fff;
+  .text-danger {
+    font-size: 16px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  > .container-fluid {
+    max-width: 540px;
+  }
+  .form-group {
+    position: relative;
+    .form-control {
+      border-bottom-color: #9f9f9f;
+      color: #ffffff;
+      font-size: 18px;
+      &:focus, &.not-empty {
+        border-bottom-color: #ffffff;
+        & + label {
+          color: #ffffff;
+        }
+      }
+      @media (min-width: $screen-sm) {
+        font-size: 22px;
+      }
+    }
+    label {
+      color: #9e9e9e;
+      font-size: 18px;
+      @media (min-width: $screen-sm) {
+        font-size: 22px;
+      }
+    }
+    .help-block {
+      display: none;
+    }
+    &.has-error {
+      .help-block {
+        display: block;
+      }
+    }
+    &.actions-group {
+      @media (min-width: $screen-sm) {
+        margin-top: 35px;
+      }
+    }
+  }
+  .btn {
+    font-weight: 700;
+    outline: 0 !important;
+    border-radius: 3px;
+    @media (min-width: $screen-sm) {
+      font-size: 22px;
+    }
+  }
+  a {
+    color: #9e9e9e;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.dashboard-login--header {
+  margin-bottom: 60px;
+}
+
+.dashboard-login--heading {
+  font-size: 22px;
+  @media (min-width: $screen-sm) {
+    font-size: 32px;
+  }
+}
+
+.dashboard-login--partnername {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: 15vh;
+  @media(min-width: $screen-sm) {
+    font-size: 22px;
+  }
+}

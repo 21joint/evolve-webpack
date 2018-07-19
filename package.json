@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
     "build": "webpack -p --progress --mode production --config webpack.config.build.js",
-    "push": "git add -u && git commit -m'autopushed' && git push"
+    "build:git": "webpack -p --progress --mode production --config webpack.config.build.js --git",
+    "git-push": "npm run build:git && git add . && git pull && git commit -m'updates' && git push"
   },
   "author": "",
   "license": "ISC",

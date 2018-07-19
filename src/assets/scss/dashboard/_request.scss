@@ -1,0 +1,13 @@
+.request-page {
+  .form-control {
+    height: 40px;
+  }
+  .btn-success {
+    max-width: none;
+  }
+  h1 {
+    @media(max-width: $screen-sm) {
+      font-size: 28px;
+    }
+  }
+}
