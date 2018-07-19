@@ -130,8 +130,8 @@
   }
   .nav-item{
     color:#9b9b9b;
-    line-height: 1;
-    padding: 18px 15px;
+    line-height: 1.2;
+    padding: 25px 15px;
     &.active{
       color: #59c0ec;
       border-bottom: 4px solid #37b5e8;
@@ -172,5 +172,40 @@
     &:last-child:after{
       content: none;
     }
+    &:hover{
+      a{
+        color: #fff;
+        background-color:#1748685e;
+      }
+    }
   }
+}
+.evlv-menu--footer{
+  min-height: 270px;
+  font-weight: 500;
+  padding: 50px 0;
+  font-size: 12px;
+}
+.evlv-cedar--wrap{
+  font-weight: 500;
+  img{
+    width: 120px;
+  }
+}
+
+.evlv-festSchedule-section{
+  padding: 20px 15px;
+}
+.btn-evlv-plus{
+  width: 30px;
+  height: 30px;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #ffdd03;
+  border-radius: 50%;
+  background-color: #23a8e3;
+
 }

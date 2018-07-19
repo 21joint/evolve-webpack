@@ -91,7 +91,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 1024,
+              limit: 10000,
               name(file) {
                 if (file.indexOf('fonts') > -1) {
                   return 'fonts/[name].[ext]';
@@ -101,7 +101,6 @@ module.exports = {
                 }
               },
               fallback: 'file-loader',
-              outputPath: './',
               publicPath: args.git ? '/evolve-webpack/' : '/'
             }
           }
