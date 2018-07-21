@@ -98,20 +98,8 @@
 }
 .evlv-menu--bottom{
   font-weight: 500;
-  .nav{
-    border-bottom: 1px solid #dee2e6;
-  }
   #nav-tabContent{
     border-bottom: 1px solid #dee2e6;
-  }
-  .nav-item{
-    color:#8b8b8b;
-    line-height: 1.2;
-    padding: 25px 15px;
-    &.active{
-      color: #59c0ec;
-      border-bottom: 4px solid #37b5e8;
-    }
   }
 
 }
@@ -185,7 +173,7 @@
   }
 }
 .evlv-festSchedule--section{
-  padding: 20px 0;
+  padding: 15px 0;
 }
 .evlv-btn--plus{
   width: 30px;

@@ -4,6 +4,7 @@
 @import "dash-board";
 @import "schedule";
 @import "talent";
+@import "dining";
 .evlv-content-box--title{
   font-size: 24px;
   color: #fff;
@@ -15,4 +16,17 @@
   right: 0;
   text-transform: uppercase;
   transform: translate(0,-50%);
+}
+
+.evlv-nav--header{
+  border-bottom: 1px solid #dee2e6;
+  .nav-item{
+    color:#8b8b8b;
+    line-height: 1.2;
+    padding: 20px 15px;
+    &.active{
+      color: #59c0ec;
+      border-bottom: 4px solid #37b5e8;
+    }
+  }
 }

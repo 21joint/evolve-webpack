@@ -1,0 +1,61 @@
+@import "var";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?gnztgx');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?gnztgx#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/icomoon.ttf?gnztgx') format('truetype'),
+  url('#{$icomoon-font-path}/icomoon.woff?gnztgx') format('woff'),
+  url('#{$icomoon-font-path}/icomoon.svg?gnztgx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon-down-arrow{
+  &:before {
+    content: unicode($icon-down-arrow);
+  }
+}
+
+.icon-earth-globe{
+  &:before {
+    content: unicode($icon-earth-globe);
+  }
+}
+
+.icon-map{
+  &:before {
+    content: unicode($icon-map);
+  }
+}
+
+.icon-phone-call{
+  &:before {
+    content: unicode($icon-phone-call);
+  }
+}
+
+.icon-checked{
+  &:before {
+    content: unicode($icon-checked);
+  }
+}
