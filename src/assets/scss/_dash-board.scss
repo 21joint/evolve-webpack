@@ -44,8 +44,7 @@
     opacity: 1;
     visibility: visible;
     overflow-y: auto;
-    transform: translate3d(-50%,0,0);
-    -moz-transform: translate3d(-50%,0,0);
+
   }
 }
 .evlv-dsh--header{
@@ -71,13 +70,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  left: 50%;
+  left: 0;
   bottom: 0;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  transform: translate3d(-50%,100%,0);
-  -webkit-transform: translate3d(-50%,100%,0);
-  -moz-transform: translate3d(-50%,100%,0);
   background-color: #fff;
   z-index: 99;
   opacity: 0;
