@@ -1,12 +1,16 @@
 .evlv-schedule--top{
-  min-height: 150px;
+  min-height: 130px;
   background-color: #0e283b;
   position: relative;
 }
 .evlv-schedule--header{
   background-color: #174868;
-  padding: 8px 15px;
+  padding: 3px 15px;
+  .evlv-section--title{
+    font-size: 14px;
+  }
 }
 .evlv-schedule--body{
   padding: 20px 10px;
+  font-size: 15px;
 }
