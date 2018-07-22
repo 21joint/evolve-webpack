@@ -15,21 +15,7 @@ module.exports = merge(webpackConfig, {
   devServer: {
     port: 3030,
     hot: true,
-    open: true,
-    before: function (app) {
-      _.each(getDirectories(viewDir), function (vd) {
-        console.log(vd.slice(vd.lastIndexOf('/')));
-        app.get(vd.slice(vd.lastIndexOf('/')), function (req, res) {
-          console.info('req url:' + req.url);
-          console.info('vd:' + vd);
-
-          system.import('./' + vd + '.js').then((a,b) => {
-            console.log(a,b);
-            res.json({html: b});
-          })
-        });
-      })
-    }
+    open: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()

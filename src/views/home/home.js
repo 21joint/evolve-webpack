@@ -11,7 +11,7 @@ function component (options) {
   return element;
 }
 
-document.body.querySelector('.' + prefix + '-wrapper').appendChild(component({
-  className: prefix + '-view',
+document.body.appendChild(component({
+  className: prefix + '-wrapper',
   id: prefix + 'Home'
 }));
