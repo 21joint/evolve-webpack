@@ -1,16 +1,34 @@
-.bwdash-schedule--top{
+.bwdash-schedule--top {
   min-height: 130px;
   background-color: #0e283b;
   position: relative;
 }
-.bwdash-schedule--header{
+
+.bwdash-schedule--header {
   background-color: #174868;
   padding: 3px 15px;
-  .bwdash-section--title{
+  .bwdash-section--title {
     font-size: 14px;
   }
 }
-.bwdash-schedule--body{
+
+.bwdash-list--item {
   padding: 20px 10px;
   font-size: 15px;
+}
+
+.bwdash-btn--plus {
+  background-color: $primary;
+  color: #ffdd03;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+
+  .added & {
+    background-color: $success;
+    color: $primary;
+  }
 }

@@ -1,166 +1,170 @@
-<button type="button"
-        class="btn btn-sm font-stretch-condensed d-flex justify-content-center align-items-center border-0 rounded-circle bwdash-nav--toggler ">
-  <b class="bwdash-nav--open">menu</b> <b class="bwdash-nav--close">close</b>
-</button>
-<div class="bwdash-nav--content">
-  <div class="bwdash-nav--top">
-    <div class="bwdash-nav--logo">
-      <img class="img-fluid d-block mx-auto" src="/src/assets/images/evolve-full--logo.svg" alt=""/>
-    </div>
-    <div class="bwdash-search--place">
-      <form id="searchForm" class="form-horizontal mb-0">
-        <div class="form-group mb-0">
-          <input type="search" class="form-control" id="input-search" placeholder="Search"/>
-        </div>
-      </form>
-    </div>
-  
+<div class="bwdash-nav">
+  <div>
+    <button type="button"
+            class="btn btn-sm font-stretch-condensed d-flex justify-content-center align-items-center border-0 rounded-circle bwdash-nav--toggler ">
+      <b class="bwdash-nav--open">menu</b> <b class="bwdash-nav--close">close</b>
+    </button>
   </div>
-  <div class="bwdash-nav--bottom">
-    <nav class="bwdash-tabs--nav">
-      <ul class="nav nav-tabs border-0 d-flex text-center no-gutters" role="tablist">
-        <li class="col"><a class="nav-link active"
-                           id="nav-festival-tab"
-                           data-toggle="tab"
-                           href="#nav-festival"
-                           role="tab"
-                           aria-controls="nav-home"
-                           aria-selected="true">Festival Guide</a></li>
-        <li class="col"><a class="nav-link"
-                           id="nav-deals-tab"
-                           data-toggle="tab"
-                           href="#nav-deals"
-                           role="tab"
-                           aria-controls="nav-profile"
-                           aria-selected="false">Perks and Deals</a></li>
-      </ul>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-festival" role="tabpanel" aria-labelledby="nav-festival-tab">
-        <ul class="bwdash-listing">
-          <li class="bwdash-section py-2">
-            <div class="container">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-auto">
-                  <button class="btn btn-sm btn-add bwdash-btn--plus d-flex align-items-center p-0 border-0">
-                    <span class="plus bg-primary rounded-circle d-flex align-items-center justify-content-center mr-2">+</span>
-                    <span class="text-asphalt font-stretch-condensed">My Festival Schedule</span></button>
-                </div>
-                <div class="col-auto">
-                  <a class="text-blue" href="#">Whats this?</a>
+  <div class="bwdash-nav--content">
+    <div class="bwdash-nav--top">
+      <div class="bwdash-nav--logo">
+        <img class="img-fluid d-block mx-auto" src="../../assets/images/evolve-full--logo.svg" alt=""/>
+      </div>
+      <div class="bwdash-search--place">
+        <form id="searchForm" class="form-horizontal mb-0">
+          <div class="form-group mb-0">
+            <input type="search" class="form-control" id="input-search" placeholder="Search"/>
+          </div>
+        </form>
+      </div>
+    
+    </div>
+    <div class="bwdash-nav--content">
+      <nav class="bwdash-nav--tabs">
+        <ul class="nav nav-tabs border-0 d-flex text-center no-gutters" role="tablist">
+          <li class="col"><a class="nav-link active"
+                             id="nav-festival-tab"
+                             data-toggle="tab"
+                             href="#nav-festival"
+                             role="tab"
+                             aria-controls="nav-home"
+                             aria-selected="true">Festival Guide</a></li>
+          <li class="col"><a class="nav-link"
+                             id="nav-deals-tab"
+                             data-toggle="tab"
+                             href="#nav-deals"
+                             role="tab"
+                             aria-controls="nav-profile"
+                             aria-selected="false">Perks and Deals</a></li>
+        </ul>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-festival" role="tabpanel" aria-labelledby="nav-festival-tab">
+          <ul class="bwdash-listing">
+            <li class="bwdash-section py-2">
+              <div class="container">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-auto">
+                    <button class="btn btn-sm bwdash-btn--plus d-flex align-items-center p-0 border-0">
+                      <span class="plus bg-primary rounded-circle d-flex align-items-center justify-content-center mr-2">+</span>
+                      <span class="text-asphalt font-stretch-condensed">My Festival Schedule</span></button>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-blue" href="#">Whats this?</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li class="bwdash-section">
-            <div class="bwdash-header">
-              <h3 class="bwdash-section--title">schedule</h3>
-            </div>
-            <div class="bwdash-listing">
-              <ul class="m-0 p-0">
-                <li><a href="#">Registration</a></li>
-                <li><a href="/schedule.html">Sessions</a></li>
-                <li><a href="#">Main Stage</a></li>
-                <li><a href="#">Wellness</a></li>
-                <li><a href="/talent.html">Talent Bios</a></li>
-                <li><a href="#">Venues</a></li>
-                <li><a href="#">Local Entertainment</a></li>
-                <li><a href="#">Zipline</a></li>
-              </ul>
-            
-            </div>
-          </li>
-          <li class="bwdash-section">
-            <div class="bwdash-header">
-              <h3 class="bwdash-section--title">exclusive pass holder experiences</h3>
-            </div>
-            <div class="bwdash-listing">
-              <ul class="m-0 p-0">
-                <li><a href="#">Art</a></li>
-                <li><a href="#">Gardens</a></li>
-                <li><a href="#">Lounge</a></li>
-                <li><a href="#">Book Signing</a></li>
-                <li><a href="#">Pop-Up Shops</a></li>
-                <li><a href="#">Sessions</a></li>
-                <li><a href="#">Concert Entry</a></li>
-                <li><a href="#">Accomodations</a></li>
-              </ul>
-            
-            </div>
-          </li>
-          <li class="bwdash-section">
-            <div class="bwdash-header">
-              <h3 class="bwdash-section--title">travel and accomodations</h3>
-            </div>
-            <div class="bwdash-listing">
-              <ul class="m-0 p-0">
-                <li><a href="#">Shuttles</a></li>
-                <li><a href="#">Closures</a></li>
-                <li><a href="#">Parking</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">Accomodations</a></li>
-                <li><a href="#">Car Service</a></li>
-                <li><a href="#">Venues</a></li>
-              </ul>
-            
-            </div>
-          </li>
-          <li class="bwdash-section">
-            <div class="bwdash-header">
-              <h3 class="bwdash-section--title">main stage concert</h3>
-            </div>
-            <div class="bwdash-listing">
-              <ul class="m-0 p-0">
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Rules/Items Allowed</a></li>
-                <li><a href="#">Security</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="bwdash-section">
-            <div class="bwdash-header">
-              <h3 class="bwdash-section--title">services</h3>
-            </div>
-            <div class="bwdash-listing">
-              <ul class="m-0 p-0">
-                <li><a href="#">Lockers</a></li>
-                <li><a href="#">Charging Stations</a></li>
-                <li><a href="#">Bathrooms</a></li>
-                <li><a href="#">Emergencies</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-pane fade" id="nav-deals" role="tabpanel" aria-labelledby="nav-deals-tab">
-        <div class="bwdash-listing">
-          <div class="bwdash--section">
-            <div class="bwdash-listing">
-              <ul class="m-0 p-0">
-                <li><a href="/dining.html">Dining</a></li>
-                <li><a href="#">Shopping</a></li>
-                <li><a href="#">Nightlife</a></li>
-              </ul>
-            
+            </li>
+            <li class="bwdash-section">
+              <div class="bwdash-listing--header">
+                <h3 class="bwdash-section--title">schedule</h3>
+              </div>
+              <div class="bwdash-listing">
+                <ul class="m-0 p-0">
+                  <li><a href="#">Registration</a></li>
+                  <li><a href="/schedule.html">Sessions</a></li>
+                  <li><a href="#">Main Stage</a></li>
+                  <li><a href="#">Wellness</a></li>
+                  <li><a href="/talent.html">Talent Bios</a></li>
+                  <li><a href="#">Venues</a></li>
+                  <li><a href="#">Local Entertainment</a></li>
+                  <li><a href="#">Zipline</a></li>
+                </ul>
+              
+              </div>
+            </li>
+            <li class="bwdash-section">
+              <div class="bwdash-listing--header">
+                <h3 class="bwdash-section--title">exclusive pass holder experiences</h3>
+              </div>
+              <div class="bwdash-listing">
+                <ul class="m-0 p-0">
+                  <li><a href="#">Art</a></li>
+                  <li><a href="#">Gardens</a></li>
+                  <li><a href="#">Lounge</a></li>
+                  <li><a href="#">Book Signing</a></li>
+                  <li><a href="#">Pop-Up Shops</a></li>
+                  <li><a href="#">Sessions</a></li>
+                  <li><a href="#">Concert Entry</a></li>
+                  <li><a href="#">Accomodations</a></li>
+                </ul>
+              
+              </div>
+            </li>
+            <li class="bwdash-section">
+              <div class="bwdash-listing--header">
+                <h3 class="bwdash-section--title">travel and accomodations</h3>
+              </div>
+              <div class="bwdash-listing">
+                <ul class="m-0 p-0">
+                  <li><a href="#">Shuttles</a></li>
+                  <li><a href="#">Closures</a></li>
+                  <li><a href="#">Parking</a></li>
+                  <li><a href="#">Maps</a></li>
+                  <li><a href="#">Accomodations</a></li>
+                  <li><a href="#">Car Service</a></li>
+                  <li><a href="#">Venues</a></li>
+                </ul>
+              
+              </div>
+            </li>
+            <li class="bwdash-section">
+              <div class="bwdash-listing--header">
+                <h3 class="bwdash-section--title">main stage concert</h3>
+              </div>
+              <div class="bwdash-listing">
+                <ul class="m-0 p-0">
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Rules/Items Allowed</a></li>
+                  <li><a href="#">Security</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bwdash-section">
+              <div class="bwdash-listing--header">
+                <h3 class="bwdash-section--title">services</h3>
+              </div>
+              <div class="bwdash-listing">
+                <ul class="m-0 p-0">
+                  <li><a href="#">Lockers</a></li>
+                  <li><a href="#">Charging Stations</a></li>
+                  <li><a href="#">Bathrooms</a></li>
+                  <li><a href="#">Emergencies</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="nav-deals" role="tabpanel" aria-labelledby="nav-deals-tab">
+          <div class="bwdash-listing">
+            <div class="bwdash--section">
+              <div class="bwdash-listing">
+                <ul class="m-0 p-0">
+                  <li><a href="/dining.html">Dining</a></li>
+                  <li><a href="#">Shopping</a></li>
+                  <li><a href="#">Nightlife</a></li>
+                </ul>
+              
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="bwdash-nav--footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="bwdash-cedar--wrap text-center mb-3">
-            <a class="d-block" href=""> <img class="img-fluid" src="/src/assets/images/go-cedar--rapids.png" alt="">
-            </a>
+    <div class="bwdash-nav--footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="bwdash-cedar--wrap text-center mb-3">
+              <a class="d-block" href=""> <img class="img-fluid" src="../../assets/images/go-cedar--rapids.png" alt="">
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-12 text-asphalt">
-          <div class="row justify-content-center">
-            <div class="col-auto"><p class="mb-0">Copyright Something</p></div>
-            <div class="col-auto"><span>Need Help</span><a class="text-blue ml-1" href="">Click Here</a></div>
+          <div class="col-12 text-asphalt">
+            <div class="row justify-content-center">
+              <div class="col-auto"><p class="mb-0">Copyright Something</p></div>
+              <div class="col-auto"><span>Need Help</span><a class="text-primary ml-1" href="">Click Here</a></div>
+            </div>
           </div>
         </div>
       </div>

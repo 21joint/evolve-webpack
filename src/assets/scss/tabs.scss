@@ -1,4 +1,4 @@
-.bwdash-tabs--nav {
+.bwdash-nav--tabs {
   .nav-link {
     color: #8b8b8b;
     padding: 20px 15px;
@@ -11,8 +11,8 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background-color: #dee2e6;
-      transition: .1s all;
+      background-color: transparent;
+      transition: .15s .15s all;
     }
     &.active {
       color: $blue;

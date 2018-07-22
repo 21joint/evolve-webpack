@@ -6,20 +6,8 @@
 @import "./global";
 @import "./tabs";
 @import "./dashboard";
+@import "./home";
 @import "./schedule";
 @import "./talent";
 @import "./dining";
-
-.bwdash-listing-box--title {
-  font-size: 24px;
-  color: #fff;
-  position: absolute;
-  margin: 0 auto;
-  top: 50%;
-  /* left: 50%; */
-  left: 0;
-  right: 0;
-  text-transform: uppercase;
-  transform: translate(0, -50%);
-}
 

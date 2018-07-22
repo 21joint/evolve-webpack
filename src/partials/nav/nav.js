@@ -11,6 +11,4 @@ function component (options) {
   return element;
 }
 
-document.querySelector('.' + prefix + '-wrapper').appendChild(component({
-  className: prefix + '-nav'
-}));
+(document.querySelector('.' + prefix + '-wrapper') || document.body).appendChild(component());

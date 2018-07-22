@@ -1,0 +1,19 @@
+
+.bwdash-home {
+  background-image: url("../images/homeImage3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.bwdash-homehero {
+  padding: 80px 0;
+  height: 100vh;
+}
+
+.bwdash-homehero--logo {
+  width: 210px;
+  margin: 0 auto;
+}

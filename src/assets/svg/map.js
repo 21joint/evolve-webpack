@@ -1,5 +1,4 @@
 import SvgMap from 'html-loader!./map.html'
-import {prefix} from '../../../conf';
 
 
 function component (options) {

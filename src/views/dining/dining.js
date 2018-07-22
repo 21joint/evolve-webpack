@@ -6,12 +6,13 @@ function component (options) {
   const element = document.createElement('div');
   element.innerHTML = Dining;
   if (options)
-    element.classList.add(options.className);
+    options.className && element.classList.add(options.className || ' ');
   element.setAttribute('id', options.id);
-  return element;
+  return element.innerHTML;
 }
 
-document.body.appendChild(component({
-  className: prefix + '-wrapper',
+(document.querySelector('.' + prefix + '-wrapper') || document.body).innerHTML = component({
+  // className: prefix + '-wrapper',
   id: prefix + 'Dining'
-}));
+});
+
