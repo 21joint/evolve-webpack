@@ -1,7 +1,5 @@
-const Conf = require('./conf');
 const path = require('path');
 const Pkg = require('./package');
-const _ = require('lodash');
 const args = require('yargs').argv;
 const glob = require('glob');
 const webpack = require('webpack');
@@ -11,16 +9,16 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 const renderHtmlTemplates = () =>
-  glob.sync('src/*.html')
-    .map(dir => new HtmlWebpackPlugin({
-      // Output
-      filename: path.basename(dir),
-      meta: {
-        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
-      },
-      template: dir,
-      title: Pkg.description
-    }));
+  glob.sync('src/**/*.html').map(dir => new HtmlWebpackPlugin({
+    // Output
+    filename: path.basename(dir),
+    meta: {
+      viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      charset: 'utf-8'
+    },
+    template: dir,
+    title: Pkg.description
+  }));
 
 /**
  * Webpack Configuration
@@ -57,7 +55,7 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                minimize: !IS_DEV,
+                minimize: ! IS_DEV,
                 sourceMap: IS_DEV,
                 publicPath: '../'
               }
@@ -92,8 +90,8 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 10000,
-              name(file) {
-                if (file.indexOf('fonts') > -1) {
+              name (file) {
+                if (file.indexOf('fonts') > - 1) {
                   return 'fonts/[name].[ext]';
                 }
                 else {
@@ -114,17 +112,18 @@ module.exports = {
       path.resolve(__dirname, 'src')
     ]
   },
-  // optimization: {
-  //   splitChunks: {
-  //     cacheGroups: {
-  //       vendor: {
-  //         test: /[\\/]node_modules[\\/]/,
-  //         chunks: 'initial',
-  //         name: 'vendors'
-  //       }
-  //     }
-  //   }
-  // },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'initial',
+          name: 'vendors',
+          priority: - 10
+        }
+      }
+    }
+  },
   plugins: [
     new webpack.DefinePlugin({
       IS_DEV

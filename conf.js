@@ -1,6 +1,7 @@
 const Pkg = require('./package');
 
 module.exports = {
+  prefix: 'bwdash',
   BASE_URL: 'https://eatdrinkslc.com/',
   title: Pkg.name,
   description: Pkg.description,

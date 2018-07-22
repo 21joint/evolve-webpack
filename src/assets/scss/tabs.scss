@@ -1,0 +1,25 @@
+.bwdash-tabs--nav {
+  .nav-link {
+    color: #8b8b8b;
+    padding: 20px 15px;
+    border-radius: 0;
+    border: none;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #dee2e6;
+      transition: .1s all;
+    }
+    &.active {
+      color: $blue;
+      &:after {
+        background-color: $blue;
+        height: 5px;
+      }
+    }
+  }
+}

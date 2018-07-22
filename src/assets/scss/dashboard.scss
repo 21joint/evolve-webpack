@@ -1,0 +1,110 @@
+
+.bwdash-wrapper {
+  max-width: map-get($grid-breakpoints, sm);
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+}
+
+.bwdash-home {
+  background-image: url("../images/homeImage3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.bwdash-header {
+  background-color: #174868;
+  padding: 5px 15px;
+}
+
+.bwdash-hero {
+  padding: 80px 0;
+  height: 100vh;
+}
+
+.bwdash-hero--logo {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.bwdash-search--place {
+  .form-control {
+    background-color: #1a4768;
+    border: none;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 7px 15px;
+    color: #fff;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+}
+
+.bwdash-section--title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.bwdash-listing {
+  line-height: 1.3;
+  li {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #dee2e6;
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+  a {
+    display: block;
+    padding: 15px 30px;
+    color: #6f6f6f;
+    &:hover {
+      background-color: #eeeeee;
+      color: darken(#6f6f6f, 20%);
+    }
+  }
+}
+
+.bwdash-cedar--wrap {
+  font-weight: 500;
+  img {
+    width: 110px;
+  }
+}
+
+.bwdash-btn--plus {
+  line-height: 1;
+  .plus {
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffdd03;
+  }
+
+}

@@ -1,12 +1,16 @@
-@import "variables";
-@import "~bootstrap/scss/bootstrap.scss";
-@import "fonts";
-@import "general";
-@import "dash-board";
-@import "schedule";
-@import "talent";
-@import "dining";
-.evlv-content-box--title{
+@import "./variables";
+@import "~bootstrap/scss/bootstrap";
+@import "../fonts/Roboto/stylesheet";
+@import "../fonts/Roboto-Condensed/stylesheet";
+@import "helpers";
+@import "./global";
+@import "./tabs";
+@import "./dashboard";
+@import "./schedule";
+@import "./talent";
+@import "./dining";
+
+.bwdash-listing-box--title {
   font-size: 24px;
   color: #fff;
   position: absolute;
@@ -16,18 +20,6 @@
   left: 0;
   right: 0;
   text-transform: uppercase;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
 }
 
-.evlv-nav--header{
-  border-bottom: 1px solid #dee2e6;
-  .nav-item{
-    color:#8b8b8b;
-    line-height: 1.3;
-    padding: 20px 15px;
-    &.active{
-      color: #59c0ec;
-      border-bottom: 5px solid #37b5e8;
-    }
-  }
-}

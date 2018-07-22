@@ -1,0 +1,83 @@
+.bwdash-nav--toggler {
+  width: 73px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: calc(73px / -2);
+  height: 73px;
+  text-transform: uppercase;
+  color: #ded62f;
+  background-color: #23a8e3;
+  z-index: 100;
+  &:hover {
+    color: #ded62f;
+  }
+}
+
+.bwdash-nav--close {
+  display: none;
+}
+
+.bwdash-nav--open {
+  .bwdash-nav--open {
+    display: none;
+  }
+  .bwdash-nav--close {
+    display: block;
+  }
+  .bwdash-nav--content {
+    opacity: 1;
+    visibility: visible;
+    overflow-y: auto;
+
+  }
+}
+
+.bwdash-nav--logo {
+  padding: 20px 0;
+  img {
+    width: 200px;
+  }
+
+}
+
+.bwdash-nav--content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: .25s all;
+}
+
+.bwdash-nav--top {
+  min-height: 200px;
+  background-color: #0e283b;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 19px 30px;
+
+}
+
+.bwdash-nav--bottom {
+  font-weight: 500;
+  #nav-tabContent {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+}
+
+.bwdash-nav--footer {
+  min-height: 270px;
+  font-weight: 500;
+  padding: 45px 0;
+  font-size: 12px;
+}

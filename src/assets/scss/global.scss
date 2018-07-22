@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  font-size: 14px;
+  font-stretch: condensed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+button:focus, .btn:focus, .btn.focus {
+  outline: 0;
+}
+
+.text-yellow {
+  color: #fede13;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.text-asphalt {
+  color: #8b8b8b;
+}
+
+.text-blue {
+  color: #37b5e8;
+}
+
+.text-asphalt--lighter {
+  color: #b1b1b1;
+}
+
+.shadow {
+  /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+  -webkit-filter: drop-shadow(-5px -5px 5px #000);
+  filter: drop-shadow(-5px -5px 5px #000);
+}

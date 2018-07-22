@@ -1,11 +1,8 @@
 $(document).ready(function () {
 
-  $('.evlv-menu--toggler').click(function (e) {
+  $('.bwdash-nav--toggler').click(function (e) {
     e.preventDefault();
-    $('body').toggleClass('evlv-menu--open');
+    $('body').toggleClass('bwdash-nav--open');
   });
 
-
 });
-
-

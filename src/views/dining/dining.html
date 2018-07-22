@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div class="bwdash-wrapper">
+    <div class="bwdash-dining">
+      <div class="bwdash-dining--top">
+        <h1 class="bwdash-listing-box--title text-center mb-0">dining</h1>
+      </div>
+      <div class="bwdash-dining--bottom">
+        <nav class="bwdash-tabs--nav">
+          <ul class="nav nav-tabs border-0 d-flex text-center no-gutters" id="dining-tabs" role="tablist">
+            <li class="col"><a class="nav-link active"
+                               id="listView-tab"
+                               data-toggle="tab"
+                               href="#listView"
+                               role="tab"
+                               aria-controls="nav-home"
+                               aria-selected="true">List View</a></li>
+            <li class="col"><a class="nav-link"
+                               id="mapView-tab"
+                               data-toggle="tab"
+                               href="#mapView"
+                               role="tab"
+                               aria-controls="nav-profile"
+                               aria-selected="false">Map View</a></li>
+          </ul>
+        </nav>
+        <div class="tab-content" id="dining-tabsContent">
+          <div class="tab-pane fade show active" id="listView" role="tabpanel" aria-labelledby="nav-festival-tab">
+            <div class="bwdash-list--content">
+              <div class="bwdash-dining--card">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="bwdash-dining-card--header">
+                        <div class="bwdash-dining--img"
+                             style="background-image: url(/src/assets/images/bowl.jpg)"></div>
+                      </div>
+                      <div class="bwdash-dining-card--body">
+                        <div class="bwdash-dining-card--description">
+                          <h6>The Full Bowl</h6>
+                          <a href="#" class="dining-description--moreLink m-0">Open Now: 11am - 5pm
+                            <i class="icon-down-arrow align-middle ml-1"></i></a>
+                          <div class="dining-desription--social">
+                            <a href="#" class="btn"><i class="icon-phone-call mr-2"></i>Phone</a> <a href="#"
+                                                                                                     class="btn"><i
+                            class="icon-map mr-2"></i>Map</a> <a href="#"
+                                                                 class="btn"><i class="icon-earth-globe mr-2"></i>Website</a>
+                          </div>
+                          <div class="dining-description--moreInfo">
+                            <a href="#"
+                               class="dining-description--moreLink">More<i class="icon-down-arrow align-middle ml-1"></i></a>
+                          </div>
+                        </div>
+                        <p class="bwdash-dining-card--devider mb-0">deals and discounts</p>
+                        <div class="bwdash-dining-card--box">
+                          <img src="/src/assets/images/p2033798.jpg" alt="">
+                          <div class="dining-box--description">
+                            <h6>Some Discount 20% Off</h6>
+                            <p class="text-asphalt">We're an urban taco joint, dedicated to serving up quality food in a trendy, modern atmosphere.</p>
+                            <div class="dining-box-description--btn">
+                              <a href="#" class="btn w-100">Redeem</a>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="bwdash-dining-card--box">
+                          <img src="/src/assets/images/P2030109.JPG" alt="">
+                          <div class="dining-box--description">
+                            <h6>Some Discount 10% Off</h6>
+                            <p class="text-asphalt">We're an urban taco joint, dedicated to serving up quality food in a trendy, modern atmosphere.</p>
+                            <div class="dining-box-description--btn">
+                              <a href="#" class="btn w-100">Redeem (2)</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bwdash-dining--card">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="bwdash-dining-card--header">
+                        <div class="bwdash-dining--img"
+                             style="background-image: url(/src/assets/images/bowl.jpg)"></div>
+                      </div>
+                      <div class="bwdash-dining-card--body">
+                        <div class="bwdash-dining-card--description">
+                          <h6>The Full Bowl</h6>
+                          <a href="#" class="dining-description--moreLink m-0">Open Now: 11am - 5pm
+                            <i class="icon-down-arrow align-middle ml-1"></i></a>
+                          <div class="dining-desription--social">
+                            <a href="#" class="btn"><i class="icon-phone-call mr-2"></i>Phone</a> <a href="#"
+                                                                                                     class="btn"><i
+                            class="icon-map mr-2"></i>Map</a> <a href="#"
+                                                                 class="btn"><i class="icon-earth-globe mr-2"></i>Website</a>
+                          </div>
+                          <div class="dining-description--moreInfo">
+                            <a href="#"
+                               class="dining-description--moreLink">More<i class="icon-down-arrow align-middle ml-1"></i></a>
+                          </div>
+                        </div>
+                        <p class="bwdash-dining-card--devider mb-0">deals and discounts</p>
+                        <div class="bwdash-dining-card--box">
+                          <img src="/src/assets/images/p2033798.jpg" alt="">
+                          <div class="dining-box--description">
+                            <h6>Some Discount 20% Off</h6>
+                            <p class="text-asphalt">We're an urban taco joint, dedicated to serving up quality food in a trendy, modern atmosphere.</p>
+                            <div class="dining-box-description--btn">
+                              <a href="#" class="btn w-100">Redeem</a>
+                            </div>
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="mapView" role="tabpanel" aria-labelledby="nav-deals-tab">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
