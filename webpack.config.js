@@ -42,7 +42,7 @@ module.exports = {
       {
         test: /\.svg/,
         use: {
-          loader: 'svg-url-loader',
+          loader: 'svg-inline-loader',
           options: {}
         }
       },
