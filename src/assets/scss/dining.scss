@@ -130,3 +130,161 @@
   }
 }
 
+.dining-redeem--modal {
+  .modal-header {
+    border-bottom: 1px solid #243a4b;
+    min-height: 128px;
+  }
+  .modal-dialog {
+    @include media-breakpoint-up(xm) {
+      max-width: 576px;
+    }
+  }
+  .modal-content {
+    background-color: #0e283b;
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: auto;
+    .container-fluid {
+      > .row {
+        min-height: 128px;
+      }
+    }
+
+  }
+  .modal-title {
+    font-size: 24px;
+  }
+  .modal-footer {
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    border: none;
+    font-size: 14px;
+    button {
+      font-stretch: condensed;
+    }
+  }
+  .bwdash-list--item {
+    border-bottom: 1px solid #243a4b;
+    color: #fff;
+    font-stretch: normal;
+    h5 {
+      font-size: 16px;
+    }
+    p {
+      color: #b7b9bb;
+      font-size: 14px;
+      font-weight: 500;
+
+    }
+  }
+  .dining-redeem-confirm--btn {
+    border-radius: 100px;
+    border: none;
+    font-size: inherit;
+    padding: 13px 60px;
+    background-color: #3f5262;
+    color: #5d6d7b;
+
+  }
+  .dining-redeem-cancel--btn {
+    background-color: transparent;
+    font-size: inherit;
+  }
+  .bwdash-btn--rounded {
+    width: 47px;
+    height: 47px;
+    background-color: #c0c3c6;
+    color: #0e283b;
+    i {
+      transform: scale(0);
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s all;
+    }
+
+  }
+
+}
+
+.dining-confirm--modal {
+  .modal-header{
+    padding: 40px 0;
+  }
+
+  .modal-content{
+    justify-content: center;
+  }
+  .modal-footer{
+    padding: 90px 0;
+    button{
+      border-radius: 100px;
+      border: none;
+      font-size: inherit;
+      padding: 13px 60px;
+      width: 240px;
+    }
+    #modal-btn-yes{
+      background-color: rgb(184, 234, 134);
+    }
+    #modal-btn-no{
+      color: #fff;
+      background-color: rgba(192, 195, 198, 0.27);
+    }
+
+  }
+}
+
+.modal-backdrop {
+  background-color: #ffffff;
+}
+
+.cheked .bwdash-btn--rounded {
+  i {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  background-color: #b8ea86;
+  font-size: 18px;
+
+}
+
+.modal-dialog {
+  @include media-breakpoint-up(xm) {
+    max-width: 576px;
+  }
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+  height: 100vh;
+}
+
+.modal-title {
+  font-size: 24px;
+}
+.modal-header {
+  font-stretch: normal;
+  p {
+    color: #b7b9bb;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+}
+.modal-footer{
+  flex-direction: column;
+}
+
+.dining-confirm--modal {
+  .modal-content {
+    background-color: #0e283b;
+    opacity: 0.9;
+  }
+
+}

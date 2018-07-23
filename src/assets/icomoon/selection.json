@@ -20,7 +20,7 @@
         {}
       ],
       "properties": {
-        "order": 348,
+        "order": 350,
         "id": 4,
         "name": "down-arrow",
         "prevSize": 32,
@@ -143,6 +143,35 @@
       "setIdx": 0,
       "setId": 3,
       "iconIdx": 4
+    },
+    {
+      "icon": {
+        "paths": [
+          "M1019.819 248.457l-634.909 634.909c-5.592 5.592-14.647 5.592-20.227 0l-360.502-360.515c-5.579-5.566-5.579-14.621 0-20.214l87.597-87.597c5.592-5.579 14.647-5.579 20.227 0l262.804 262.791 537.199-537.199c5.605-5.579 14.634-5.579 20.227 0l87.584 87.597c5.592 5.579 5.592 14.621 0 20.227z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 16,
+        "tags": [
+          "check-mark-black-outline"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 349,
+        "id": 5,
+        "name": "check-black",
+        "prevSize": 32,
+        "code": 59653
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 5
     }
   ],
   "height": 1024,
