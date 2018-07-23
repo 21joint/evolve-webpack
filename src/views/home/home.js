@@ -1,5 +1,5 @@
 import {prefix} from '../../../conf';
-import Home from './home.html';
+import Home from 'html-loader!./home.html';
 
 
 function component (options) {

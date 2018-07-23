@@ -35,17 +35,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.html$/,
-        use: 'html-loader?minimize=false&publicPath=' + (IS_DEV ? '/evolve-webpack/' : '/')
-      },
-      {
-        test: /\.svg/,
-        use: {
-          loader: 'svg-inline-loader',
-          options: {}
-        }
-      },
       // JS
       {
         test: /\.js$/,
