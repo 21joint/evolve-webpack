@@ -1,5 +1,5 @@
 import {prefix} from '../../../conf';
-import Talent from 'html-loader!./talent.html';
+import Talent from 'html-loader?minimize=false!./talent.html';
 
 function component (options) {
   const element = document.createElement('div');

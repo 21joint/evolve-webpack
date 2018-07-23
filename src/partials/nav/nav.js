@@ -1,6 +1,6 @@
 import {prefix} from '../../../conf';
 import './nav.scss';
-import Nav from 'html-loader!./nav.html';
+import Nav from 'html-loader?minimize=false!./nav.html';
 
 
 function component (options) {

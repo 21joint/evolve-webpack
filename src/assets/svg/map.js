@@ -1,4 +1,4 @@
-import SvgMap from 'html-loader!./map.html'
+import SvgMap from 'html-loader?minimize=false!./map.html'
 
 
 function component (options) {
