@@ -19,10 +19,10 @@ var buttonCheked  = function(callback){
 
 buttonCheked(function(cheked){
   if(cheked){
-    //Acciones si el usuario confirma
-    $(".bwdash-btn--rounded").parents(".bwdash-list--item").addClass("cheked") && $(".dining-redeem-confirm--btn").css({"background-color": "#b8ea86"});
+
+        $(".dining-redeem-confirm--btn").css({"background-color": "#b8ea86"});
   }else{
-    //Acciones si el usuario no confirma
+
   }
 });
 
