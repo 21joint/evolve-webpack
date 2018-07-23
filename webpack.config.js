@@ -35,6 +35,17 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        use: 'html-loader?minimize=false&publicPath=' + (IS_DEV ? '/evolve-webpack/' : '/')
+      },
+      {
+        test: /\.svg/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {}
+        }
+      },
       // JS
       {
         test: /\.js$/,
@@ -119,7 +130,7 @@ module.exports = {
           test: /[\\/]node_modules[\\/]/,
           chunks: 'initial',
           name: 'vendors',
-          priority: - 10
+          priority: -10
         }
       }
     }

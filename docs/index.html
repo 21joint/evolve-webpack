@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Evolve Dashboard</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="charset" content="utf-8"><link href="styles/app.css" rel="stylesheet"></head>
 <body>
   <div class="bwdash-wrapper">
-    <div class=bwdash-home> <div class=container-fluid> <div class=row> <div class=col-12> <div class="bwdash-homehero d-flex flex-column"> <div class="bwdash-homehero--logo mb-auto"> <svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 421.34 191.93"> <use href=#evlvLogoOnly></use> </svg> </div> <div class="bwdash-page--hero--footer text-center text-white mb-5"> <h6>THREE DAYS OF</h6> <div> <img class=img-fluid src=/evolve-webpack/images/evolve-logo--char.svg alt="Music, Art, and Inspiration"> </div> <h4 class="text-yellow mt-2"> <b>GET STARTED</b> </h4> </div> </div> </div> </div> </div> </div> 
+    <%= require('html-loader!./views/home/home.html') %>
   </div>
-<script type="text/javascript" src="scripts/vendors.361f9722c3346636e7f2.js"></script><script type="text/javascript" src="scripts/app.0cc2885466c0820c6072.js"></script></body>
+<script type="text/javascript" src="scripts/vendors.361f9722c3346636e7f2.js"></script><script type="text/javascript" src="scripts/app.f2c1d20348bafd5234ee.js"></script></body>
 </html>

@@ -1,5 +1,5 @@
 import {prefix} from '../../../conf';
-import Dining from 'html-loader!./dining.html';
+import Dining from './dining.html';
 
 
 function component (options) {

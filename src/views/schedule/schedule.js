@@ -1,5 +1,5 @@
 import {prefix} from '../../../conf';
-import Schedule from 'html-loader!./schedule.html';
+import Schedule from './schedule.html';
 
 
 function component (options) {
