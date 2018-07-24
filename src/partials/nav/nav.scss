@@ -46,6 +46,7 @@
   left: 0;
   right: 0;
   top: 0;
+  font-weight: 500;
   bottom: 0;
   height: 100%;
   width: 100%;
@@ -56,6 +57,10 @@
   opacity: 0;
   visibility: hidden;
   transition: .25s all;
+  #nav-tabContent {
+    border-bottom: 1px solid #dee2e6;
+  }
+
 }
 
 .bwdash-nav--top {
@@ -63,15 +68,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px 20px 20px;
-
-}
-
-.bwdash-nav--content {
-  font-weight: 500;
-  #nav-tabContent {
-    border-bottom: 1px solid #dee2e6;
-  }
-
+  background-image: url("../../assets/images/stars1.png");
 }
 
 .bwdash-nav--footer {
@@ -110,3 +107,5 @@
     }
   }
 }
+
+

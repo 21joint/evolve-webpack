@@ -8,22 +8,16 @@ $(document).ready(function () {
 });
 
 
-var buttonCheked = function (callback) {
 
-  $(".bwdash-btn--rounded").on("click", function () {
-    callback(true);
+
+  $(".bwdash-list--item").on("click", function () {
+
+    $(".dining-redeem-confirm--btn").addClass("bg-green-cheked");
   });
 
-};
 
-buttonCheked(function (cheked) {
-  if (cheked) {
 
-    $(".dining-redeem-confirm--btn").css({"background-color": "#b8ea86"});
-  } else {
 
-  }
-});
 
 var modalConfirm = function (callback) {
 
@@ -42,7 +36,7 @@ var modalConfirm = function (callback) {
 modalConfirm(function (confirm) {
   if (confirm) {
     //Acciones si el usuario confirma
-    $(".bwdash-list--item.cheked").css({"opacity": "0.3"});
+    $(".bwdash-list--item").css({"opacity": "0.3"});
   } else {
     //Acciones si el usuario no confirma
     $("#diningConfirmModalCenter").modal('hide');

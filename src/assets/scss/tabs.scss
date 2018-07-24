@@ -22,4 +22,8 @@
       }
     }
   }
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    background-color: transparent;
+  }
+
 }
