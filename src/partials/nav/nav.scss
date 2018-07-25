@@ -68,7 +68,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px 20px 20px;
-  background-image: url("../../assets/images/stars1.png");
+  background-image: url("../../assets/images/stars1.svg");
+  //&:after{
+  //  content: "";
+  //  position: absolute;
+  //  left: 0;
+  //  right: 0;
+  //  top: 0;
+  //  bottom: 0;
+  //  background-image: url("../../assets/images/lines.png");
+  //}
 }
 
 .bwdash-nav--footer {
@@ -107,5 +116,9 @@
     }
   }
 }
+
+.bwdash-map--content.embed-responsive--longer::before{
+    padding-bottom: 200%;
+  }
 
 
