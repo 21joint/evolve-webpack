@@ -55,7 +55,7 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                minimize: ! IS_DEV,
+                minimize: !IS_DEV,
                 sourceMap: IS_DEV,
                 publicPath: '../'
               }
