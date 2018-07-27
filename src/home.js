@@ -1,10 +1,10 @@
-import {prefix} from '../../../conf';
-import Dining from 'html-loader?minimize=false!./dining.html';
+import {prefix} from '../conf';
+import Home from 'src/home.html';
 
 
 function component (options) {
   const element = document.createElement('div');
-  element.innerHTML = Dining;
+  element.innerHTML = Home;
   if (options)
     options.className && element.classList.add(options.className || ' ');
   element.setAttribute('id', options.id);
@@ -13,6 +13,5 @@ function component (options) {
 
 (document.querySelector('.' + prefix + '-wrapper') || document.body).innerHTML = component({
   // className: prefix + '-wrapper',
-  id: prefix + 'Dining'
+  id: prefix + 'Home'
 });
-

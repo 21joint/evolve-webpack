@@ -9,7 +9,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 const renderHtmlTemplates = () =>
-  glob.sync('src/**/*.html').map(dir => new HtmlWebpackPlugin({
+  glob.sync('src/*.html').map(dir => new HtmlWebpackPlugin({
     // Output
     filename: path.basename(dir),
     meta: {
@@ -111,18 +111,6 @@ module.exports = {
       'node_modules',
       path.resolve(__dirname, 'src')
     ]
-  },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          chunks: 'initial',
-          name: 'vendors',
-          priority: -10
-        }
-      }
-    }
   },
   plugins: [
     new webpack.DefinePlugin({

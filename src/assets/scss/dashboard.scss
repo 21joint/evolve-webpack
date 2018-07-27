@@ -16,6 +16,28 @@
   }
 }
 
+.bwdash-hero--bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: -30px;
+  overflow: hidden;
+  .bwdash-waves {
+    opacity: .5;
+  }
+}
+
+.bwdash-hero--bg > svg {
+  /* height: auto; */
+  width: 100%;
+  transform: translate(0, -50%);
+  position: absolute;
+  /* left: 50%; */
+  top: 30%;
+  /* max-height: 100%; */
+}
+
 .bwdash-search--place {
   .form-control {
     background-color: #1a4768;

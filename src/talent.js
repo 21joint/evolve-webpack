@@ -1,4 +1,4 @@
-import {prefix} from '../../../conf';
+import {prefix} from '../conf';
 import Talent from 'html-loader?minimize=false!./talent.html';
 
 function component (options) {
