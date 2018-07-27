@@ -26,9 +26,13 @@
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-
   .added & {
     background-color: $success;
     color: $primary;
+    &:before {
+      font-family: 'icomoon';
+      content: '\E900';
+      font-size: 12px;
+    }
   }
 }

@@ -53,3 +53,11 @@ button:focus, .btn:focus, .btn.focus {
   -webkit-filter: drop-shadow(-5px -5px 5px #000);
   filter: drop-shadow(-5px -5px 5px #000);
 }
+
+.bwdash-list--item {
+  .btn-add {
+    &:before {
+      content: '+';
+    }
+  }
+}
