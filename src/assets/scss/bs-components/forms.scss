@@ -8,9 +8,8 @@ input[type="checkbox"] {
     box-sizing: content-box;
     .box {
       position: absolute;
-
-
-
+      height: 22px;
+      width: 22px;
       right: 0;
       top: 50%;
       transform: translate(0, -50%);
