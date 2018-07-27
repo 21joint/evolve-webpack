@@ -1,17 +1,1 @@
-import {prefix} from '../conf';
-import Schedule from 'html-loader?minimize=false!./schedule.html';
-
-
-function component (options) {
-  const element = document.createElement('div');
-  element.innerHTML = Schedule;
-  if (options)
-    options.className && element.classList.add(options.className || ' ');
-  element.setAttribute('id', options.id);
-  return element.innerHTML;
-}
-
-(document.querySelector('.' + prefix + '-wrapper')|| document.body).innerHTML = component({
-  // className: prefix + '-wrapper',
-  id: prefix + 'Schedule'
-});
+import 'html-loader?minimize=false!./schedule.html';

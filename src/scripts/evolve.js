@@ -5,22 +5,15 @@ $(document).ready(function () {
     $('body').toggleClass('bwdash-nav--open');
   });
 
-});
-
-
-
-
   $(".bwdash-list--item").on("click", function () {
 
     $(".dining-redeem-confirm--btn").addClass("bg-green-cheked");
   });
 
-
-
+});
 
 
 var modalConfirm = function (callback) {
-
 
   $("#modal-btn-yes").on("click", function () {
     callback(true);

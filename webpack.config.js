@@ -26,7 +26,10 @@ const renderHtmlTemplates = () =>
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    index: './src/index.js',
+    schedule: './src/schedule.js',
+    talent: './src/talent.js',
+    dining: './src/dining.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
