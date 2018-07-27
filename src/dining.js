@@ -1,2 +1,1 @@
-import 'html-loader?minimize=false&interpolate!./dining.html';
-
+import 'html-loader?interpolate&publicPath=/!./dining.html';
