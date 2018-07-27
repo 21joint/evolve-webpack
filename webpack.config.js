@@ -90,6 +90,14 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 10000,
+              name (file) {
+                if (file.indexOf('fonts') > - 1) {
+                  return 'fonts/[name].[ext]';
+                }
+                else {
+                  return 'images/[name].[ext]';
+                }
+              },
               fallback: 'file-loader',
               publicPath: args.git ? '/evolve-webpack/' : '/'
             }
