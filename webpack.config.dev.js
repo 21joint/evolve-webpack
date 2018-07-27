@@ -3,7 +3,6 @@ const _ = require('lodash');
 const path = require('path');
 const webpack = require('webpack');
 const system = require('systemjs');
-const viewDir = './src/views/';
 const {lstatSync, readdirSync} = require('fs');
 const {join} = require('path');
 const isDirectory = source => lstatSync(source).isDirectory();
@@ -13,7 +12,7 @@ const webpackConfig = require('./webpack.config');
 
 module.exports = merge(webpackConfig, {
   devServer: {
-    port: 3030,
+    port: 7777,
     hot: true,
     open: true
   },
