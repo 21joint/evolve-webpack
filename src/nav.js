@@ -1,5 +1,5 @@
-import {prefix} from '../../../conf';
-import './nav.scss';
+import {prefix} from '../conf';
+import './assets/scss/nav.scss';
 import Nav from 'html-loader?minimize=false!./nav.html';
 
 

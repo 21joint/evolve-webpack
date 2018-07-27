@@ -3,6 +3,6 @@ import './assets/scss/index.scss';
 import 'bootstrap';
 
 import './assets/svg/map';
-import './partials/nav/nav';
+import './nav';
 
 import './scripts/evolve';
