@@ -5,7 +5,6 @@ const glob = require('glob');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 const renderHtmlTemplates = () =>
@@ -17,7 +16,8 @@ const renderHtmlTemplates = () =>
       charset: 'utf-8'
     },
     template: dir,
-    title: Pkg.description
+    title: Pkg.description,
+    publicPath: args.git ? '/evolve-webpack/' : '/'
   }));
 
 /**
@@ -104,12 +104,6 @@ module.exports = {
           }
         ]
       }
-    ]
-  },
-  resolve: {
-    modules: [
-      'node_modules',
-      path.resolve(__dirname, 'src')
     ]
   },
   plugins: [

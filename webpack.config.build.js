@@ -11,7 +11,6 @@ const publicPath = args.git ? '' : '/evolve-webpack/';
 const dist = args.git ? 'docs' : 'dist';
 
 module.exports = merge(webpackConfig, {
-  target: 'web',
   output: {
     path: path.join(__dirname, dist),
     filename: 'scripts/[name].[chunkhash].js',
@@ -20,5 +19,5 @@ module.exports = merge(webpackConfig, {
   plugins: [
     new CleanWebpackPlugin([dist])
   ],
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
 });
