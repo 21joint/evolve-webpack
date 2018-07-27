@@ -17,7 +17,7 @@ const renderHtmlTemplates = () =>
     },
     template: dir,
     title: Pkg.description,
-    publicPath: args.git ? '/evolve-webpack/' : '/'
+    publicPath: args.git ? '/evolve-webpack/' : ''
   }));
 
 /**
