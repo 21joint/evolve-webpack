@@ -7,7 +7,7 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 const glob = require('glob');
 
 
-const publicPath = args.git ? '' : '/';
+const publicPath = args.git ? '' : '/evolve-webpack/';
 const dist = args.git ? 'docs' : 'dist';
 
 module.exports = merge(webpackConfig, {
