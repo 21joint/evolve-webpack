@@ -1,1 +1,1 @@
-import 'html-loader?minimize=false!./schedule.html';
+import 'html-loader?interpolate!./schedule.html';
