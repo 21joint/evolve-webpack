@@ -7,6 +7,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
+
+const publicPath = args.git ? '/evolve-webpack/' : '/';
+
 const renderHtmlTemplates = () =>
   glob.sync('src/*.html').map(dir => new HtmlWebpackPlugin({
     // Output
@@ -16,8 +19,7 @@ const renderHtmlTemplates = () =>
       charset: 'utf-8'
     },
     template: dir,
-    title: Pkg.description,
-    publicPath: args.git ? '/evolve-webpack/' : ''
+    title: Pkg.description
   }));
 
 /**
@@ -86,7 +88,7 @@ module.exports = {
 
       // FONTS/IMAGES
       {
-        test: /\.(woff|woff2|ttf|eot|otf|svg|gif|png|jpe?g)$/i,
+        test: /\.(woff|woff2|ttf|eot|otf|svg|gif|png|jpeg|jpg)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -101,7 +103,7 @@ module.exports = {
                 }
               },
               fallback: 'file-loader',
-              publicPath: args.git ? '/evolve-webpack/' : '/'
+              publicPath: publicPath
             }
           }
         ]

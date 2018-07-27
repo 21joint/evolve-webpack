@@ -1,2 +1,2 @@
-import 'html-loader?minimize=false!./dining.html';
+import 'html-loader?minimize=false&interpolate!./dining.html';
 
